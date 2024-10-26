@@ -3,7 +3,10 @@
   "version": "1.0.2",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
-  "repository": "https://github.com/zivivle/rollup.git",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zivivle/rollup.git"
+  },
   "author": "zivivle <123868471+zivivle@users.noreply.github.com>",
   "license": "MIT",
   "private": false,

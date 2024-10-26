@@ -37,7 +37,7 @@ const config = [
       },
       {
         name: pkg.name,
-        file: "./dist/index.umd.js", // UMD는 여전히 "file" 사용 가능
+        file: "./dist/index.umd.js",
         format: "umd",
         globals: {
           react: "React",
