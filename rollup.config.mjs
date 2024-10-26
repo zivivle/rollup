@@ -22,20 +22,22 @@ const config = [
     input: "./src/index.ts",
     output: [
       {
-        dir: "./dist",
+        dir: "dist",
         format: "cjs",
         preserveModules: true,
         preserveModulesRoot: "src",
         sourcemap: true,
       },
       {
-        file: "./dist/index.esm.js",
+        dir: "dist",
         format: "es",
+        preserveModules: true,
+        preserveModulesRoot: "src",
         sourcemap: true,
       },
       {
         name: pkg.name,
-        file: "./dist/index.umd.js",
+        file: "./dist/index.umd.js", // UMD는 여전히 "file" 사용 가능
         format: "umd",
         globals: {
           react: "React",
