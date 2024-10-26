@@ -12,9 +12,9 @@ import typescript from "@rollup/plugin-typescript";
 import peerDepsExternal from "rollup-plugin-peer-deps-external";
 import postcss from "rollup-plugin-postcss";
 
-const extensions = ["js", "jsx", "ts", "tsx", "mjs"];
+import pkg from "./package.json" assert { type: "json" };
 
-const pkg = require("./package.json");
+const extensions = [".js", ".jsx", ".ts", ".tsx", ".mjs"];
 
 const config = [
   {
@@ -26,15 +26,23 @@ const config = [
         format: "cjs",
         preserveModules: true,
         preserveModulesRoot: "src",
+        sourcemap: true,
       },
       {
-        file: pkg.module,
+        file: "./dist/index.esm.js",
         format: "es",
+        sourcemap: true,
       },
       {
         name: pkg.name,
-        file: pkg.browser,
+        file: "./dist/index.umd.js",
         format: "umd",
+        globals: {
+          react: "React",
+          "react-dom": "ReactDOM",
+          tslib: "tslib",
+        },
+        sourcemap: true,
       },
     ],
     plugins: [
@@ -42,6 +50,7 @@ const config = [
       babel({
         exclude: "node_modules/**",
         extensions,
+        babelHelpers: "bundled",
         include: ["src/**/*"],
       }),
       commonjs({ include: "node_modules/**" }),

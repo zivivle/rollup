@@ -1,11 +1,12 @@
 {
   "name": "zivivle-rollup",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "repository": "https://github.com/zivivle/rollup.git",
   "author": "zivivle <123868471+zivivle@users.noreply.github.com>",
   "license": "MIT",
   "private": false,
+  "type": "module",
   "devDependencies": {
     "@chromatic-com/storybook": "^1.9.0",
     "@rollup/plugin-babel": "^6.0.4",
