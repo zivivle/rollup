@@ -1,10 +1,3 @@
-/**
- * Rollup 설정 모듈
- *
- * @author RWB
- * @since 2022.06.06 Mon 17:44:31
- */
-
 import babel from "@rollup/plugin-babel";
 import commonjs from "@rollup/plugin-commonjs";
 import { nodeResolve } from "@rollup/plugin-node-resolve";
@@ -59,10 +52,9 @@ const config = [
       peerDepsExternal(),
       typescript({ tsconfig: "./tsconfig.json" }),
       postcss({
-        extract: true,
+        extract: "styles.css",
         modules: false,
         sourceMap: true,
-        use: ["sass"],
       }),
     ],
   },

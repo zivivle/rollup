@@ -93,4 +93,100 @@
   color: #c2c4c8;
   cursor: not-allowed;
 }
+/*# sourceMappingURL=index.css.map */
+.btn {
+  border: none;
+  padding: 0.5rem 1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+.btn.btn-large {
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  padding: 0rem 1rem;
+  min-width: 5rem;
+  min-height: 3.5rem;
+}
+.btn.btn-medium {
+  border-radius: 0.375rem;
+  font-size: 1rem;
+  padding: 0rem 1rem;
+  min-width: 5rem;
+  min-height: 3rem;
+}
+.btn.btn-small {
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
+  padding: 0rem 1rem;
+  min-width: 3.75rem;
+  min-height: 2.5rem;
+}
+.btn.btn-solid.btn-primary {
+  background-color: #000;
+  color: #fff;
+}
+.btn.btn-solid.btn-primary:hover:not(.btn-disabled) {
+  background-color: #374151;
+}
+.btn.btn-solid.btn-secondary {
+  background-color: #f7f8f9;
+  color: #000;
+}
+.btn.btn-solid.btn-secondary:hover:not(.btn-disabled) {
+  background-color: #fff;
+}
+.btn.btn-solid.btn-disabled {
+  background-color: #dbdcdf;
+  color: #c2c4c8;
+  cursor: not-allowed;
+}
+.btn.btn-outlined {
+  background: transparent;
+  border: 1px solid currentColor;
+  color: #000;
+}
+.btn.btn-outlined.btn-primary {
+  border: 1px solid #000;
+}
+.btn.btn-outlined.btn-primary:hover:not(.btn-disabled) {
+  background-color: #f3f4f6;
+}
+.btn.btn-outlined.btn-secondary {
+  border: 1px solid #e0e0e2;
+}
+.btn.btn-outlined.btn-secondary:hover:not(.btn-disabled) {
+  background-color: #f3f4f6;
+}
+.btn.btn-outlined.btn-large {
+  font-size: 1rem;
+}
+.btn.btn-outlined.btn-medium {
+  font-size: 0.875rem;
+}
+.btn.btn-outlined.btn-small {
+  font-size: 0.75rem;
+}
+.btn.btn-outlined.btn-disabled {
+  border: 1px solid #e0e0e2;
+  color: #c2c4c8;
+  cursor: not-allowed;
+}
+.btn.btn-text {
+  background: transparent;
+  color: #000;
+}
+.btn.btn-text:hover:not(.btn-disabled) {
+  background-color: #f3f4f6;
+}
+.btn.btn-text.btn-secondary {
+  color: #171719;
+}
+.btn.btn-text.btn-disabled {
+  color: #c2c4c8;
+  cursor: not-allowed;
+}
 /*# sourceMappingURL=index.umd.css.map */
