@@ -19,11 +19,11 @@ function Button({
   onClick,
 }: Props) {
   const classNames = `
-    btn
-    btn-${variant}
-    btn-${type}
-    btn-${size}
-    ${disabled ? "btn-disabled" : ""}
+    zivivle-btn
+    zivivle-btn-${variant}
+    zivivle-btn-${type}
+    zivivle-btn-${size}
+    ${disabled ? "zivivle-btn-disabled" : ""}
   `;
 
   return (

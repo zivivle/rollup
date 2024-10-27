@@ -15,7 +15,7 @@
         disabled = _e === void 0 ? false : _e,
         children = _a.children,
         onClick = _a.onClick;
-      var classNames = "\n    btn\n    btn-".concat(variant, "\n    btn-").concat(type, "\n    btn-").concat(size, "\n    ").concat(disabled ? "btn-disabled" : "", "\n  ");
+      var classNames = "\n    zivivle-btn\n    zivivle-btn-".concat(variant, "\n    zivivle-btn-").concat(type, "\n    zivivle-btn-").concat(size, "\n    ").concat(disabled ? "zivivle-btn-disabled" : "", "\n  ");
       return React.createElement("button", {
         className: classNames,
         disabled: disabled,
