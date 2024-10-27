@@ -1,9 +1,12 @@
 import React from "react";
+import "./Button.scss";
 type Props = {
-    label: string;
+    variant?: "solid" | "outlined" | "text";
+    type?: "primary" | "secondary";
+    size?: "large" | "medium" | "small";
+    disabled?: boolean;
+    children: React.ReactNode;
     onClick: () => void;
-    type: "button" | "submit" | "reset" | undefined;
-    className: string;
 };
-declare const Button: ({ label, onClick, type, className, ...props }: Props) => React.JSX.Element;
+declare function Button({ variant, type, size, disabled, children, onClick, }: Props): React.JSX.Element;
 export default Button;
