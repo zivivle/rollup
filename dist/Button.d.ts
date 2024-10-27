@@ -1,5 +1,4 @@
 import React from "react";
-import "./Button.css";
 type Props = {
     variant?: "solid" | "outlined" | "text";
     type?: "primary" | "secondary";

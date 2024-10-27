@@ -1,5 +1,5 @@
 import React from "react";
-import "./Button.css";
+import styles from "./Button.module.css";
 
 type Props = {
   variant?: "solid" | "outlined" | "text";
@@ -19,11 +19,11 @@ function Button({
   onClick,
 }: Props) {
   const classNames = `
-    zivivle-btn
-    zivivle-btn-${variant}
-    zivivle-btn-${type}
-    zivivle-btn-${size}
-    ${disabled ? "zivivle-btn-disabled" : ""}
+    ${styles["zivivle-btn"]}
+    ${styles[`zivivle-btn-${variant}`]}
+    ${styles[`zivivle-btn-${type}`]}
+    ${styles[`zivivle-btn-${size}`]}
+    ${disabled ? styles["zivivle-btn-disabled"] : ""}
   `;
 
   return (

@@ -1,4 +1,7 @@
-import React from 'react';
+'use strict';
+
+var React = require('react');
+var Button_module = require('./Button.module.css.js');
 
 function Button(_a) {
   var _b = _a.variant,
@@ -11,7 +14,7 @@ function Button(_a) {
     disabled = _e === void 0 ? false : _e,
     children = _a.children,
     onClick = _a.onClick;
-  var classNames = "\n    zivivle-btn\n    zivivle-btn-".concat(variant, "\n    zivivle-btn-").concat(type, "\n    zivivle-btn-").concat(size, "\n    ").concat(disabled ? "zivivle-btn-disabled" : "", "\n  ");
+  var classNames = "\n    ".concat(Button_module["zivivle-btn"], "\n    ").concat(Button_module["zivivle-btn-".concat(variant)], "\n    ").concat(Button_module["zivivle-btn-".concat(type)], "\n    ").concat(Button_module["zivivle-btn-".concat(size)], "\n    ").concat(disabled ? Button_module["zivivle-btn-disabled"] : "", "\n  ");
   return React.createElement("button", {
     className: classNames,
     disabled: disabled,
@@ -19,6 +22,5 @@ function Button(_a) {
   }, children);
 }
 
-export { Button as default };
+module.exports = Button;
 //# sourceMappingURL=Button.js.map
-utton.js.map
