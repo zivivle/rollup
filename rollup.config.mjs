@@ -59,11 +59,9 @@ const config = [
       peerDepsExternal(),
       typescript({ tsconfig: "./tsconfig.json" }),
       postcss({
-        extract: false,
-        inject: (cssVariableName) =>
-          `import styleInject from 'style-inject';\nstyleInject(${cssVariableName});`,
-        modules: true,
-        sourceMap: false,
+        extract: true,
+        modules: false,
+        sourceMap: true,
         use: ["sass"],
       }),
     ],

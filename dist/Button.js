@@ -1,5 +1,4 @@
 import React from 'react';
-import './Button.scss.js';
 
 function Button(_a) {
   var _b = _a.variant,
@@ -22,4 +21,4 @@ function Button(_a) {
 
 export { Button as default };
 //# sourceMappingURL=Button.js.map
-=Button.js.map
+utton.js.map

@@ -1,8 +1,3 @@
-'use strict';
-
-var Button = require('./Button.js');
-
-
-
-exports.Button = Button;
+export { default as Button } from './Button.js';
 //# sourceMappingURL=index.js.map
+ sourceMappingURL=index.js.map
